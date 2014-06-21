@@ -10,4 +10,6 @@
 
 @interface DAGUser : NSObject
 
+@property (nonatomic, strong) NSString *authenticationToken;
+
 @end

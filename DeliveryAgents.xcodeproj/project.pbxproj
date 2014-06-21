@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0776D5B81955BB6800D43E32 /* DAGUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 0776D5B71955BB6800D43E32 /* DAGUser.m */; };
+		0776D5BB1955BF0800D43E32 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0776D5BA1955BF0800D43E32 /* Storyboard.storyboard */; };
+		0776D5BF1955C25300D43E32 /* DAGSessionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0776D5BE1955C25300D43E32 /* DAGSessionViewController.m */; };
 		07DC8A0D1955B4590083AF8A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07DC8A0C1955B4590083AF8A /* Foundation.framework */; };
 		07DC8A0F1955B4590083AF8A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07DC8A0E1955B4590083AF8A /* CoreGraphics.framework */; };
 		07DC8A111955B4590083AF8A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07DC8A101955B4590083AF8A /* UIKit.framework */; };
@@ -39,6 +41,9 @@
 /* Begin PBXFileReference section */
 		0776D5B61955BB6800D43E32 /* DAGUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DAGUser.h; path = Models/DAGUser.h; sourceTree = "<group>"; };
 		0776D5B71955BB6800D43E32 /* DAGUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DAGUser.m; path = Models/DAGUser.m; sourceTree = "<group>"; };
+		0776D5BA1955BF0800D43E32 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Storyboard.storyboard; path = Views/Storyboard.storyboard; sourceTree = "<group>"; };
+		0776D5BD1955C25300D43E32 /* DAGSessionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DAGSessionViewController.h; path = ViewControllers/DAGSessionViewController.h; sourceTree = "<group>"; };
+		0776D5BE1955C25300D43E32 /* DAGSessionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DAGSessionViewController.m; path = ViewControllers/DAGSessionViewController.m; sourceTree = "<group>"; };
 		07DC8A091955B4590083AF8A /* DeliveryAgents.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeliveryAgents.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07DC8A0C1955B4590083AF8A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		07DC8A0E1955B4590083AF8A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -99,6 +104,23 @@
 			name = Models;
 			sourceTree = "<group>";
 		};
+		0776D5B91955BEED00D43E32 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0776D5BA1955BF0800D43E32 /* Storyboard.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		0776D5BC1955C22600D43E32 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0776D5BD1955C25300D43E32 /* DAGSessionViewController.h */,
+				0776D5BE1955C25300D43E32 /* DAGSessionViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
 		07DC8A001955B4580083AF8A = {
 			isa = PBXGroup;
 			children = (
@@ -134,6 +156,8 @@
 		07DC8A121955B4590083AF8A /* DeliveryAgents */ = {
 			isa = PBXGroup;
 			children = (
+				0776D5BC1955C22600D43E32 /* ViewControllers */,
+				0776D5B91955BEED00D43E32 /* Views */,
 				0776D5B51955BB5300D43E32 /* Models */,
 				07DC8A211955B4590083AF8A /* DAGAppDelegate.h */,
 				07DC8A221955B4590083AF8A /* DAGAppDelegate.m */,
@@ -266,6 +290,7 @@
 			files = (
 				07DC8A251955B4590083AF8A /* Images.xcassets in Resources */,
 				07DC8A1E1955B4590083AF8A /* InfoPlist.strings in Resources */,
+				0776D5BB1955BF0800D43E32 /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,6 +343,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				07DC8A201955B4590083AF8A /* main.m in Sources */,
+				0776D5BF1955C25300D43E32 /* DAGSessionViewController.m in Sources */,
 				07DC8A1A1955B4590083AF8A /* DeliveryAgentsAPIClient.m in Sources */,
 				07DC8A461955B9000083AF8A /* DAGBaseService.m in Sources */,
 				0776D5B81955BB6800D43E32 /* DAGUser.m in Sources */,

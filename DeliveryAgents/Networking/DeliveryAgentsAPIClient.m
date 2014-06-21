@@ -2,8 +2,6 @@
 
 @interface DeliveryAgentsAPIClient ()
 
-@property (nonatomic, strong) NSURL *apiBaseURL;
-
 @end
 
 @implementation DeliveryAgentsAPIClient
@@ -19,16 +17,11 @@
 }
 
 - (NSURL *)baseURL {
-    return self.apiBaseURL;
-}
-
-- (void)setBaseURL:(NSString *)url {
-    NSString *URLString = [url stringByAppendingPathComponent:@"api"];
-    _apiBaseURL = [NSURL URLWithString:URLString];
+    return [NSURL URLWithString:DAGAPIBaseURL];
 }
 
 - (NSString *)baseURLString {
-    return [self.apiBaseURL absoluteString];
+    return [self.baseURL absoluteString];
 }
 
 - (AFHTTPRequestOperation *)HTTPRequestOperationWithRequest:(NSURLRequest *)request
