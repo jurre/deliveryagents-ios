@@ -13,6 +13,7 @@
 #import "DAGJobTableViewCell.h"
 #import "DAGApplyViewController.h"
 #import "DAGJobPoller.h"
+#import "CRToast.h"
 
 static NSString *const DAGJobCellIdentifier  = @"DAGJobCell";
 
@@ -68,6 +69,11 @@ static NSString *const DAGJobCellIdentifier  = @"DAGJobCell";
 }
 
 - (void)pollerDidFetchNewJobs:(NSArray *)newJobs {
+    if (self.jobs.count != newJobs.count) {
+        [CRToastManager showNotificationWithOptions:@{kCRToastTextKey : @"New booking posted!",
+                                                  kCRToastTextAlignmentKey : @(NSTextAlignmentCenter),
+                                                  kCRToastBackgroundColorKey : [UIColor colorWithRed:0.539 green:0.866 blue:0.397 alpha:1.000]} completionBlock:nil];
+    }
     self.jobs = newJobs;
     [self addAnnotations];
     [self.tableView reloadData];
@@ -133,7 +139,9 @@ static NSString *const DAGJobCellIdentifier  = @"DAGJobCell";
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    DAGJob *job = self.jobs[indexPath.row];
+    NSUInteger row = indexPath.row;
+    NSUInteger count = self.jobs.count;
+    DAGJob *job = self.jobs[count - 1 - row];
     DAGJobTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:DAGJobCellIdentifier];
     cell.clientNameLabel.text = job.clientName;
     CLLocationDistance distance = [self.currentLocation distanceFromLocation:[[CLLocation alloc] initWithCoordinate:job.location altitude:0 horizontalAccuracy:0 verticalAccuracy:0 timestamp:nil]];
