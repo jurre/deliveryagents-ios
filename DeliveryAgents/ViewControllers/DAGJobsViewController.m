@@ -12,12 +12,14 @@
 #import "DAGJobAnnotation.h"
 #import "DAGJobTableViewCell.h"
 #import "DAGApplyViewController.h"
+#import "DAGJobPoller.h"
 
 static NSString *const DAGJobCellIdentifier  = @"DAGJobCell";
 
-@interface DAGJobsViewController () <CLLocationManagerDelegate>
+@interface DAGJobsViewController () <CLLocationManagerDelegate, DAGJobPollerDelegate>
 
 @property (nonatomic, strong) NSArray *jobs;
+@property (nonatomic, strong) DAGJobPoller *poller;
 
 @end
 
@@ -42,6 +44,11 @@ static NSString *const DAGJobCellIdentifier  = @"DAGJobCell";
     self.locationManager = nil;
 }
 
+- (void)viewWillDisappear:(BOOL)animated {
+    [self.poller stopPolling];
+    [super viewWillDisappear:animated];
+}
+
 - (void)updateLocation {
     [self.locationManager startUpdatingLocation];
 }
@@ -54,12 +61,25 @@ static NSString *const DAGJobCellIdentifier  = @"DAGJobCell";
     }
 }
 
+- (void)startPolling {
+    self.poller = [[DAGJobPoller alloc] initWithLocation:self.currentLocation.coordinate];
+    self.poller.delegate = self;
+    [self.poller startPolling];
+}
+
+- (void)pollerDidFetchNewJobs:(NSArray *)newJobs {
+    self.jobs = newJobs;
+    [self addAnnotations];
+    [self.tableView reloadData];
+}
+
 # pragma mark - CLLocationManagerDelegate methods
 
 - (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations {
     self.currentLocation = [locations lastObject];
     [self fetchJobsForLocation:self.currentLocation];
     [self zoomToLocation:self.currentLocation radius:1000];
+    [self startPolling];
 
     MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(self.currentLocation.coordinate, 1500, 1500);
     [self.mapView setRegion:[self.mapView regionThatFits:region] animated:YES];
@@ -80,12 +100,15 @@ static NSString *const DAGJobCellIdentifier  = @"DAGJobCell";
 }
 
 - (void)addAnnotations {
+    [self.mapView removeAnnotations:self.mapView.annotations];
+
     for (DAGJob *job in self.jobs) {
         DAGJobAnnotation *annotation = [[DAGJobAnnotation alloc] initWithJob:job];
         [self.mapView addAnnotation:annotation];
         NSLog(@"Added annotation: lat: %f lon: %f", job.location.latitude, job.location.longitude);
     }
 }
+
 
 # pragma mark - MKMapView Delegate
 
