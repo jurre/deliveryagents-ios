@@ -32,7 +32,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="email@example.com" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nbj-tq-JcO">
-                                                    <rect key="frame" x="107" y="7" width="193" height="30"/>
+                                                    <rect key="frame" x="120" y="7" width="180" height="30"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -60,7 +60,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="your password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VYf-ST-NMT">
-                                                    <rect key="frame" x="115" y="7" width="193" height="30"/>
+                                                    <rect key="frame" x="120" y="7" width="180" height="30"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -106,10 +106,10 @@
             </objects>
             <point key="canvasLocation" x="673" y="70"/>
         </scene>
-        <!--View Controller-->
+        <!--Jobs View Controller - Nearby Jobs-->
         <scene sceneID="gk4-hK-FqC">
             <objects>
-                <viewController id="Wnr-kc-6XG" sceneMemberID="viewController">
+                <viewController id="Wnr-kc-6XG" customClass="DAGJobsViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Hur-FQ-kcv"/>
                         <viewControllerLayoutGuide type="bottom" id="UhK-bA-sSZ"/>
@@ -117,13 +117,66 @@
                     <view key="view" contentMode="scaleToFill" id="pqc-fJ-mYb">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" bounces="NO" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="RaM-c9-bW5">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="0.20000001788139343" green="0.20000001788139343" blue="0.20000001788139343" alpha="1" colorSpace="deviceRGB"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="DAGJobCell" id="PLq-W9-oqS" customClass="DAGJobTableViewCell">
+                                        <rect key="frame" x="0.0" y="86" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="PLq-W9-oqS" id="6ZD-EL-fDE">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vt0-Tm-lpb">
+                                                    <rect key="frame" x="20" y="11" width="170" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.20000001789999999" green="0.20000001789999999" blue="0.20000001789999999" alpha="1" colorSpace="deviceRGB"/>
+                                        <connections>
+                                            <outlet property="clientNameLabel" destination="vt0-Tm-lpb" id="XZ7-Ff-u84"/>
+                                            <segue destination="t32-3d-Rvf" kind="push" id="9Uf-4G-Rib"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="2Oq-h4-PXl"/>
+                    <navigationItem key="navigationItem" title="Nearby Jobs" id="2Oq-h4-PXl"/>
+                    <connections>
+                        <outlet property="tableView" destination="RaM-c9-bW5" id="GKO-JP-gVe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YU4-xC-Uyf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1089" y="70"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="R7U-M5-1pK">
+            <objects>
+                <viewController id="t32-3d-Rvf" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="13d-re-wSE"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ybv-GY-Rga"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="J0A-3a-GJ8">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="W2g-Ly-AfX"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K12-l3-yVq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1480" y="70"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="0oH-rP-veq">

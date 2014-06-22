@@ -1,6 +1,11 @@
 #import "AFHTTPRequestOperationManager.h"
+#import "ip_address.h"
 
+#ifdef DEBUG
+static NSString * const DAGAPIBaseURL = LOCAL_IP_ADDRESS;
+#else
 static NSString *const DAGAPIBaseURL = @"http://localhost:3000/api/";
+#endif
 
 @interface DeliveryAgentsAPIClient : AFHTTPRequestOperationManager
 

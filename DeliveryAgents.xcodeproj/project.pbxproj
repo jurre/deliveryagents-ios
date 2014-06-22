@@ -10,6 +10,11 @@
 		0776D5B81955BB6800D43E32 /* DAGUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 0776D5B71955BB6800D43E32 /* DAGUser.m */; };
 		0776D5BB1955BF0800D43E32 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0776D5BA1955BF0800D43E32 /* Storyboard.storyboard */; };
 		0776D5BF1955C25300D43E32 /* DAGSessionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0776D5BE1955C25300D43E32 /* DAGSessionViewController.m */; };
+		0776D5C61955FEFB00D43E32 /* DAGJobsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0776D5C51955FEFB00D43E32 /* DAGJobsViewController.m */; };
+		0776D5C9195602C000D43E32 /* DAGJobService.m in Sources */ = {isa = PBXBuildFile; fileRef = 0776D5C8195602C000D43E32 /* DAGJobService.m */; };
+		0776D5CC19562B1B00D43E32 /* DAGJob.m in Sources */ = {isa = PBXBuildFile; fileRef = 0776D5CB19562B1B00D43E32 /* DAGJob.m */; };
+		0776D5D119564F3200D43E32 /* DAGJobAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0776D5D019564F3200D43E32 /* DAGJobAnnotation.m */; };
+		0776D5D519565B2200D43E32 /* DAGJobTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0776D5D419565B2200D43E32 /* DAGJobTableViewCell.m */; };
 		07DC8A0D1955B4590083AF8A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07DC8A0C1955B4590083AF8A /* Foundation.framework */; };
 		07DC8A0F1955B4590083AF8A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07DC8A0E1955B4590083AF8A /* CoreGraphics.framework */; };
 		07DC8A111955B4590083AF8A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07DC8A101955B4590083AF8A /* UIKit.framework */; };
@@ -44,6 +49,18 @@
 		0776D5BA1955BF0800D43E32 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Storyboard.storyboard; path = Views/Storyboard.storyboard; sourceTree = "<group>"; };
 		0776D5BD1955C25300D43E32 /* DAGSessionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DAGSessionViewController.h; path = ViewControllers/DAGSessionViewController.h; sourceTree = "<group>"; };
 		0776D5BE1955C25300D43E32 /* DAGSessionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DAGSessionViewController.m; path = ViewControllers/DAGSessionViewController.m; sourceTree = "<group>"; };
+		0776D5C41955FEFB00D43E32 /* DAGJobsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DAGJobsViewController.h; path = ViewControllers/DAGJobsViewController.h; sourceTree = "<group>"; };
+		0776D5C51955FEFB00D43E32 /* DAGJobsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DAGJobsViewController.m; path = ViewControllers/DAGJobsViewController.m; sourceTree = "<group>"; };
+		0776D5C7195602C000D43E32 /* DAGJobService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DAGJobService.h; path = Networking/DAGJobService.h; sourceTree = "<group>"; };
+		0776D5C8195602C000D43E32 /* DAGJobService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DAGJobService.m; path = Networking/DAGJobService.m; sourceTree = "<group>"; };
+		0776D5CA19562B1B00D43E32 /* DAGJob.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DAGJob.h; path = Models/DAGJob.h; sourceTree = "<group>"; };
+		0776D5CB19562B1B00D43E32 /* DAGJob.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DAGJob.m; path = Models/DAGJob.m; sourceTree = "<group>"; };
+		0776D5CE195634CE00D43E32 /* ip_address.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ip_address.h; sourceTree = "<group>"; };
+		0776D5CF19564F3200D43E32 /* DAGJobAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DAGJobAnnotation.h; path = Models/DAGJobAnnotation.h; sourceTree = "<group>"; };
+		0776D5D019564F3200D43E32 /* DAGJobAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DAGJobAnnotation.m; path = Models/DAGJobAnnotation.m; sourceTree = "<group>"; };
+		0776D5D21956580200D43E32 /* Berlin.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Berlin.gpx; sourceTree = "<group>"; };
+		0776D5D319565B2200D43E32 /* DAGJobTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DAGJobTableViewCell.h; path = Views/DAGJobTableViewCell.h; sourceTree = "<group>"; };
+		0776D5D419565B2200D43E32 /* DAGJobTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DAGJobTableViewCell.m; path = Views/DAGJobTableViewCell.m; sourceTree = "<group>"; };
 		07DC8A091955B4590083AF8A /* DeliveryAgents.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeliveryAgents.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07DC8A0C1955B4590083AF8A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		07DC8A0E1955B4590083AF8A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -100,6 +117,10 @@
 			children = (
 				0776D5B61955BB6800D43E32 /* DAGUser.h */,
 				0776D5B71955BB6800D43E32 /* DAGUser.m */,
+				0776D5CA19562B1B00D43E32 /* DAGJob.h */,
+				0776D5CB19562B1B00D43E32 /* DAGJob.m */,
+				0776D5CF19564F3200D43E32 /* DAGJobAnnotation.h */,
+				0776D5D019564F3200D43E32 /* DAGJobAnnotation.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -108,6 +129,8 @@
 			isa = PBXGroup;
 			children = (
 				0776D5BA1955BF0800D43E32 /* Storyboard.storyboard */,
+				0776D5D319565B2200D43E32 /* DAGJobTableViewCell.h */,
+				0776D5D419565B2200D43E32 /* DAGJobTableViewCell.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -117,6 +140,8 @@
 			children = (
 				0776D5BD1955C25300D43E32 /* DAGSessionViewController.h */,
 				0776D5BE1955C25300D43E32 /* DAGSessionViewController.m */,
+				0776D5C41955FEFB00D43E32 /* DAGJobsViewController.h */,
+				0776D5C51955FEFB00D43E32 /* DAGJobsViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -175,6 +200,8 @@
 				07DC8A1B1955B4590083AF8A /* DeliveryAgents-Info.plist */,
 				07DC8A1C1955B4590083AF8A /* InfoPlist.strings */,
 				07DC8A1F1955B4590083AF8A /* main.m */,
+				0776D5CE195634CE00D43E32 /* ip_address.h */,
+				0776D5D21956580200D43E32 /* Berlin.gpx */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -188,6 +215,8 @@
 				07DC8A421955B88D0083AF8A /* DAGSessionService.m */,
 				07DC8A441955B9000083AF8A /* DAGBaseService.h */,
 				07DC8A451955B9000083AF8A /* DAGBaseService.m */,
+				0776D5C7195602C000D43E32 /* DAGJobService.h */,
+				0776D5C8195602C000D43E32 /* DAGJobService.m */,
 			);
 			name = Networking;
 			sourceTree = "<group>";
@@ -222,6 +251,7 @@
 				07DC8A061955B4580083AF8A /* Frameworks */,
 				07DC8A071955B4580083AF8A /* Resources */,
 				82138449D92F4963B6FAD449 /* Copy Pods Resources */,
+				0776D5CD1956344D00D43E32 /* Set Local IP */,
 			);
 			buildRules = (
 			);
@@ -305,6 +335,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0776D5CD1956344D00D43E32 /* Set Local IP */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Set Local IP";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/sh\nset -e\n\nHEADER=\"${SRCROOT}/DeliveryAgents/ip_address.h\"\n\necho \"// This file is generated by a build script.\" > $HEADER\necho \"// Updated on \"`date` >> $HEADER\necho \"\" >> $HEADER\n\nip_address=\"`ifconfig en0 | grep \"inet \" | cut -d: -f2 | awk '{print $2}'`\"\necho \"#define LOCAL_IP_ADDRESS @\\\"http://${ip_address}:3000/api\\\"\" >> $HEADER";
+		};
 		4EC5249FAA0746D08F3A341E /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -344,11 +388,16 @@
 			files = (
 				07DC8A201955B4590083AF8A /* main.m in Sources */,
 				0776D5BF1955C25300D43E32 /* DAGSessionViewController.m in Sources */,
+				0776D5C61955FEFB00D43E32 /* DAGJobsViewController.m in Sources */,
 				07DC8A1A1955B4590083AF8A /* DeliveryAgentsAPIClient.m in Sources */,
 				07DC8A461955B9000083AF8A /* DAGBaseService.m in Sources */,
+				0776D5D119564F3200D43E32 /* DAGJobAnnotation.m in Sources */,
 				0776D5B81955BB6800D43E32 /* DAGUser.m in Sources */,
+				0776D5CC19562B1B00D43E32 /* DAGJob.m in Sources */,
 				07DC8A231955B4590083AF8A /* DAGAppDelegate.m in Sources */,
 				07DC8A431955B88D0083AF8A /* DAGSessionService.m in Sources */,
+				0776D5D519565B2200D43E32 /* DAGJobTableViewCell.m in Sources */,
+				0776D5C9195602C000D43E32 /* DAGJobService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
