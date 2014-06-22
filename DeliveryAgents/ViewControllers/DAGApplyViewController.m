@@ -47,6 +47,7 @@
     CLLocationDistance distance = [self.currentLocation distanceFromLocation:[[CLLocation alloc] initWithCoordinate:self.job.location altitude:0 horizontalAccuracy:0 verticalAccuracy:0 timestamp:nil]];
     self.distanceLabel.text = [NSString stringWithFormat:@"%0.2fkm", distance / 1000];
     self.summaryTextView.text = self.job.summary;
+    self.dateLabel.text = self.job.date;
 }
 
 - (IBAction)apply:(id)sender {

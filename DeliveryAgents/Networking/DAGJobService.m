@@ -68,25 +68,10 @@
     job.jobId = dictionary[@"id"];
     job.clientName = dictionary[@"client_name"];
     job.location = CLLocationCoordinate2DMake([dictionary[@"lat"] doubleValue], [dictionary[@"lon"] doubleValue]);
-    job.date = [self dateFromISO8601String:dictionary[@"date"]];
+    job.date = dictionary[@"date"];
     job.addressName = dictionary[@"address_name"];
     job.summary = dictionary[@"description"];
     return job;
-}
-
-- (NSDate *)dateFromISO8601String:(NSString *)dateString {
-
-    NSDate *dateFromString = [[self dateFormatter] dateFromString:dateString];
-    return dateFromString;
-}
-
-- (NSDateFormatter *)dateFormatter {
-    static NSDateFormatter *dateFormatter;
-    if (!dateFormatter) {
-        dateFormatter = [[NSDateFormatter alloc] init];
-        [dateFormatter setDateFormat:@"yyyy-MM-dd'T'HH:mm:ssZ"];
-    }
-    return dateFormatter;
 }
 
 @end

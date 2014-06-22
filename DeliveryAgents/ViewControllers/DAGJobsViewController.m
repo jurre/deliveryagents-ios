@@ -115,7 +115,7 @@ static NSString *const DAGJobCellIdentifier  = @"DAGJobCell";
     cell.clientNameLabel.text = job.clientName;
     CLLocationDistance distance = [self.currentLocation distanceFromLocation:[[CLLocation alloc] initWithCoordinate:job.location altitude:0 horizontalAccuracy:0 verticalAccuracy:0 timestamp:nil]];
     cell.distanceLabel.text = [NSString stringWithFormat:@"%0.2fkm", distance / 1000];
-    cell.dateLabel.text = [self.dateFormatter stringFromDate:job.date];
+    cell.dateLabel.text = job.date;
     cell.addressLabel.text = job.addressName;
     return cell;
 }
@@ -131,13 +131,5 @@ static NSString *const DAGJobCellIdentifier  = @"DAGJobCell";
 
 #pragma mark - Private
 
-- (NSDateFormatter *)dateFormatter {
-    static NSDateFormatter *dateFormatter;
-    if (!dateFormatter) {
-        dateFormatter = [[NSDateFormatter alloc] init];
-       [dateFormatter setDateStyle:NSDateFormatterMediumStyle];
-    }
-    return dateFormatter;
-}
 
 @end

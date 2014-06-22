@@ -256,6 +256,7 @@
                     <connections>
                         <outlet property="addressNameLabel" destination="Upo-cU-hRS" id="YGJ-YB-zqv"/>
                         <outlet property="clientNameLabel" destination="oqI-y4-UP3" id="dqt-Bv-fk3"/>
+                        <outlet property="dateLabel" destination="abm-Ta-v0e" id="jqt-7a-vqz"/>
                         <outlet property="distanceLabel" destination="J0h-nD-aHT" id="Opz-2f-nlo"/>
                         <outlet property="mapView" destination="nqK-0Q-t3t" id="M0x-6D-78X"/>
                     </connections>

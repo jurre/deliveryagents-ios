@@ -16,6 +16,6 @@
 @property (nonatomic, copy) NSString *addressName;
 @property (nonatomic, copy) NSString *summary;
 @property (nonatomic) CLLocationCoordinate2D location;
-@property (nonatomic, strong) NSDate *date;
+@property (nonatomic, copy) NSString *date;
 
 @end
