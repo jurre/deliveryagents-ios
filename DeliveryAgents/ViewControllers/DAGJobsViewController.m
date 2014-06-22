@@ -27,7 +27,7 @@ static NSString *const DAGJobCellIdentifier  = @"DAGJobCell";
 
     self.navigationItem.hidesBackButton = YES;
 
-    self.mapView = [[MKMapView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 200)];
+    self.mapView = [[MKMapView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 240)];
     self.mapView.delegate = self;
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
@@ -112,7 +112,21 @@ static NSString *const DAGJobCellIdentifier  = @"DAGJobCell";
     DAGJob *job = self.jobs[indexPath.row];
     DAGJobTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:DAGJobCellIdentifier];
     cell.clientNameLabel.text = job.clientName;
+    CLLocationDistance distance = [self.currentLocation distanceFromLocation:[[CLLocation alloc] initWithCoordinate:job.location altitude:0 horizontalAccuracy:0 verticalAccuracy:0 timestamp:nil]];
+    cell.distanceLabel.text = [NSString stringWithFormat:@"%0.2fkm", distance / 1000];
+    cell.dateLabel.text = [self.dateFormatter stringFromDate:job.date];
     return cell;
+}
+
+#pragma mark - Private
+
+- (NSDateFormatter *)dateFormatter {
+    static NSDateFormatter *dateFormatter;
+    if (!dateFormatter) {
+        dateFormatter = [[NSDateFormatter alloc] init];
+       [dateFormatter setDateStyle:NSDateFormatterMediumStyle];
+    }
+    return dateFormatter;
 }
 
 @end

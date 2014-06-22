@@ -7,6 +7,7 @@
 //
 
 #import "DAGSessionViewController.h"
+#import "CRToast.h"
 
 static NSString *const DAGSegueIdentifierSignin = @"DAGSegueIdentifierSignin";
 
@@ -53,7 +54,7 @@ static NSString *const DAGSegueIdentifierSignin = @"DAGSegueIdentifierSignin";
     } failure:^(NSError *error) {
         completion();
 
-//        [CRToastManager showNotificationWithMessage:@"You done goofed. Try again." completionBlock:nil];
+        [CRToastManager showNotificationWithMessage:@"Email or password invalid" completionBlock:nil];
         NSLog(@"Failed signing in: %@", error);
 
     }];

@@ -20,11 +20,14 @@ PODS:
   - AFNetworking/UIKit (2.3.1):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
+  - CRToast (0.0.7)
 
 DEPENDENCIES:
   - AFNetworking
+  - CRToast
 
 SPEC CHECKSUMS:
   AFNetworking: 6d7b76aa5d04c8c37daad3eef4b7e3f2a7620da3
+  CRToast: f9f2c4b29776d68ba24c4d621cba59a83fea921b
 
 COCOAPODS: 0.33.1

@@ -56,8 +56,8 @@
 		0776D5CA19562B1B00D43E32 /* DAGJob.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DAGJob.h; path = Models/DAGJob.h; sourceTree = "<group>"; };
 		0776D5CB19562B1B00D43E32 /* DAGJob.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DAGJob.m; path = Models/DAGJob.m; sourceTree = "<group>"; };
 		0776D5CE195634CE00D43E32 /* ip_address.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ip_address.h; sourceTree = "<group>"; };
-		0776D5CF19564F3200D43E32 /* DAGJobAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DAGJobAnnotation.h; path = Models/DAGJobAnnotation.h; sourceTree = "<group>"; };
-		0776D5D019564F3200D43E32 /* DAGJobAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DAGJobAnnotation.m; path = Models/DAGJobAnnotation.m; sourceTree = "<group>"; };
+		0776D5CF19564F3200D43E32 /* DAGJobAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DAGJobAnnotation.h; path = Views/DAGJobAnnotation.h; sourceTree = "<group>"; };
+		0776D5D019564F3200D43E32 /* DAGJobAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DAGJobAnnotation.m; path = Views/DAGJobAnnotation.m; sourceTree = "<group>"; };
 		0776D5D21956580200D43E32 /* Berlin.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Berlin.gpx; sourceTree = "<group>"; };
 		0776D5D319565B2200D43E32 /* DAGJobTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DAGJobTableViewCell.h; path = Views/DAGJobTableViewCell.h; sourceTree = "<group>"; };
 		0776D5D419565B2200D43E32 /* DAGJobTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DAGJobTableViewCell.m; path = Views/DAGJobTableViewCell.m; sourceTree = "<group>"; };
@@ -119,8 +119,6 @@
 				0776D5B71955BB6800D43E32 /* DAGUser.m */,
 				0776D5CA19562B1B00D43E32 /* DAGJob.h */,
 				0776D5CB19562B1B00D43E32 /* DAGJob.m */,
-				0776D5CF19564F3200D43E32 /* DAGJobAnnotation.h */,
-				0776D5D019564F3200D43E32 /* DAGJobAnnotation.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -128,6 +126,8 @@
 		0776D5B91955BEED00D43E32 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				0776D5CF19564F3200D43E32 /* DAGJobAnnotation.h */,
+				0776D5D019564F3200D43E32 /* DAGJobAnnotation.m */,
 				0776D5BA1955BF0800D43E32 /* Storyboard.storyboard */,
 				0776D5D319565B2200D43E32 /* DAGJobTableViewCell.h */,
 				0776D5D419565B2200D43E32 /* DAGJobTableViewCell.m */,

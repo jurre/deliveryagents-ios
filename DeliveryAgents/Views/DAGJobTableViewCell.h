@@ -11,5 +11,8 @@
 @interface DAGJobTableViewCell : UITableViewCell
 
 @property (nonatomic, weak) IBOutlet UILabel *clientNameLabel;
+@property (nonatomic, weak) IBOutlet UILabel *addressLabel;
+@property (nonatomic, weak) IBOutlet UILabel *dateLabel;
+@property (nonatomic, weak) IBOutlet UILabel *distanceLabel;
 
 @end
