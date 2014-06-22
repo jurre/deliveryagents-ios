@@ -8,6 +8,7 @@
 
 #import "DAGJobService.h"
 #import "DAGJob.h"
+#import "DAGSessionService.h"
 
 @implementation DAGJobService
 
@@ -33,6 +34,20 @@
     }];
 }
 
+- (void)applyForJob:(DAGJob *)job completion:(void (^)(void))completion failure:(void (^)(NSError *error))failure {
+    NSDictionary *params = @{
+        @"email" : [[DAGSessionService sharedService] currentUser].email,
+        @"job_id" : job.jobId
+    };
+
+    [self.apiClient POST:self.endpoint parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        completion();
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        failure(error);
+    }];
+
+}
+
 #pragma mark - Private
 
 - (NSString *)endpoint {
@@ -50,9 +65,12 @@
 
 - (DAGJob *)jobFromDictionary:(NSDictionary *)dictionary {
     DAGJob *job = [[DAGJob alloc] init];
-    job.clientName = dictionary[@"client"][@"name"];
-    job.location = CLLocationCoordinate2DMake([dictionary[@"location"][@"lat"] doubleValue], [dictionary[@"location"][@"lon"] doubleValue]);
+    job.jobId = dictionary[@"id"];
+    job.clientName = dictionary[@"client_name"];
+    job.location = CLLocationCoordinate2DMake([dictionary[@"lat"] doubleValue], [dictionary[@"lon"] doubleValue]);
     job.date = [self dateFromISO8601String:dictionary[@"date"]];
+    job.addressName = dictionary[@"address_name"];
+    job.summary = dictionary[@"description"];
     return job;
 }
 

@@ -11,7 +11,10 @@
 
 @interface DAGJob : DAGBaseService
 
-@property (nonatomic, strong) NSString *clientName;
+@property (nonatomic, strong) NSNumber *jobId;
+@property (nonatomic, copy) NSString *clientName;
+@property (nonatomic, copy) NSString *addressName;
+@property (nonatomic, copy) NSString *summary;
 @property (nonatomic) CLLocationCoordinate2D location;
 @property (nonatomic, strong) NSDate *date;
 

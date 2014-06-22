@@ -47,7 +47,9 @@ static NSString *const DAGAPIEndPointSession = @"sessions";
 }
 
 - (DAGUser *)userFromResponse:(NSDictionary *)response {
-    return [[DAGUser alloc] init];
+    DAGUser *user = [[DAGUser alloc] init];
+    user.email = response[@"user"][@"email"];
+    return user;
 }
 
 @end

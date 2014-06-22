@@ -15,6 +15,7 @@
 		0776D5CC19562B1B00D43E32 /* DAGJob.m in Sources */ = {isa = PBXBuildFile; fileRef = 0776D5CB19562B1B00D43E32 /* DAGJob.m */; };
 		0776D5D119564F3200D43E32 /* DAGJobAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0776D5D019564F3200D43E32 /* DAGJobAnnotation.m */; };
 		0776D5D519565B2200D43E32 /* DAGJobTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0776D5D419565B2200D43E32 /* DAGJobTableViewCell.m */; };
+		0776D5D81956C42100D43E32 /* DAGApplyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0776D5D71956C42100D43E32 /* DAGApplyViewController.m */; };
 		07DC8A0D1955B4590083AF8A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07DC8A0C1955B4590083AF8A /* Foundation.framework */; };
 		07DC8A0F1955B4590083AF8A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07DC8A0E1955B4590083AF8A /* CoreGraphics.framework */; };
 		07DC8A111955B4590083AF8A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07DC8A101955B4590083AF8A /* UIKit.framework */; };
@@ -61,6 +62,8 @@
 		0776D5D21956580200D43E32 /* Berlin.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Berlin.gpx; sourceTree = "<group>"; };
 		0776D5D319565B2200D43E32 /* DAGJobTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DAGJobTableViewCell.h; path = Views/DAGJobTableViewCell.h; sourceTree = "<group>"; };
 		0776D5D419565B2200D43E32 /* DAGJobTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DAGJobTableViewCell.m; path = Views/DAGJobTableViewCell.m; sourceTree = "<group>"; };
+		0776D5D61956C42100D43E32 /* DAGApplyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DAGApplyViewController.h; path = ViewControllers/DAGApplyViewController.h; sourceTree = "<group>"; };
+		0776D5D71956C42100D43E32 /* DAGApplyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DAGApplyViewController.m; path = ViewControllers/DAGApplyViewController.m; sourceTree = "<group>"; };
 		07DC8A091955B4590083AF8A /* CareAgents.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CareAgents.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07DC8A0C1955B4590083AF8A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		07DC8A0E1955B4590083AF8A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -142,6 +145,8 @@
 				0776D5BE1955C25300D43E32 /* DAGSessionViewController.m */,
 				0776D5C41955FEFB00D43E32 /* DAGJobsViewController.h */,
 				0776D5C51955FEFB00D43E32 /* DAGJobsViewController.m */,
+				0776D5D61956C42100D43E32 /* DAGApplyViewController.h */,
+				0776D5D71956C42100D43E32 /* DAGApplyViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -395,6 +400,7 @@
 				0776D5B81955BB6800D43E32 /* DAGUser.m in Sources */,
 				0776D5CC19562B1B00D43E32 /* DAGJob.m in Sources */,
 				07DC8A231955B4590083AF8A /* DAGAppDelegate.m in Sources */,
+				0776D5D81956C42100D43E32 /* DAGApplyViewController.m in Sources */,
 				07DC8A431955B88D0083AF8A /* DAGSessionService.m in Sources */,
 				0776D5D519565B2200D43E32 /* DAGJobTableViewCell.m in Sources */,
 				0776D5C9195602C000D43E32 /* DAGJobService.m in Sources */,

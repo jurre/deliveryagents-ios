@@ -11,6 +11,7 @@
 #import "DAGJob.h"
 #import "DAGJobAnnotation.h"
 #import "DAGJobTableViewCell.h"
+#import "DAGApplyViewController.h"
 
 static NSString *const DAGJobCellIdentifier  = @"DAGJobCell";
 
@@ -115,7 +116,17 @@ static NSString *const DAGJobCellIdentifier  = @"DAGJobCell";
     CLLocationDistance distance = [self.currentLocation distanceFromLocation:[[CLLocation alloc] initWithCoordinate:job.location altitude:0 horizontalAccuracy:0 verticalAccuracy:0 timestamp:nil]];
     cell.distanceLabel.text = [NSString stringWithFormat:@"%0.2fkm", distance / 1000];
     cell.dateLabel.text = [self.dateFormatter stringFromDate:job.date];
+    cell.addressLabel.text = job.addressName;
     return cell;
+}
+
+#pragma mark - Segue
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+    DAGApplyViewController *vc = [segue destinationViewController];
+    vc.job = self.jobs[indexPath.row];
+    [self.tableView deselectRowAtIndexPath:indexPath animated:NO];
 }
 
 #pragma mark - Private

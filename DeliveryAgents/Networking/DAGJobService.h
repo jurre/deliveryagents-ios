@@ -7,6 +7,7 @@
 //
 
 #import "DAGBaseService.h"
+#import "DAGJob.h"
 #import <MapKit/MapKit.h>
 
 static NSString *const DAGApiEndpointJobs = @"jobs";
@@ -17,4 +18,6 @@ static NSString *const DAGApiEndpointJobs = @"jobs";
                        completion:(void (^)(NSArray *result))completion
                           failure:(void (^)(NSError *error))failure;
 
+- (void)applyForJob:(DAGJob *)job completion:(void (^)(void))completion failure:(void (^)(NSError *error))failure;
+    
 @end
