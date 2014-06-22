@@ -61,22 +61,22 @@
 		0776D5D21956580200D43E32 /* Berlin.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Berlin.gpx; sourceTree = "<group>"; };
 		0776D5D319565B2200D43E32 /* DAGJobTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DAGJobTableViewCell.h; path = Views/DAGJobTableViewCell.h; sourceTree = "<group>"; };
 		0776D5D419565B2200D43E32 /* DAGJobTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DAGJobTableViewCell.m; path = Views/DAGJobTableViewCell.m; sourceTree = "<group>"; };
-		07DC8A091955B4590083AF8A /* DeliveryAgents.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeliveryAgents.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		07DC8A091955B4590083AF8A /* CareAgents.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CareAgents.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07DC8A0C1955B4590083AF8A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		07DC8A0E1955B4590083AF8A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		07DC8A101955B4590083AF8A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		07DC8A161955B4590083AF8A /* DeliveryAgents-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DeliveryAgents-Prefix.pch"; sourceTree = "<group>"; };
+		07DC8A161955B4590083AF8A /* CareAgents-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CareAgents-Prefix.pch"; sourceTree = "<group>"; };
 		07DC8A181955B4590083AF8A /* DeliveryAgentsAPIClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DeliveryAgentsAPIClient.h; path = Networking/DeliveryAgentsAPIClient.h; sourceTree = "<group>"; };
 		07DC8A191955B4590083AF8A /* DeliveryAgentsAPIClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = DeliveryAgentsAPIClient.m; path = Networking/DeliveryAgentsAPIClient.m; sourceTree = "<group>"; };
-		07DC8A1B1955B4590083AF8A /* DeliveryAgents-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DeliveryAgents-Info.plist"; sourceTree = "<group>"; };
+		07DC8A1B1955B4590083AF8A /* CareAgents-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CareAgents-Info.plist"; sourceTree = "<group>"; };
 		07DC8A1D1955B4590083AF8A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		07DC8A1F1955B4590083AF8A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		07DC8A211955B4590083AF8A /* DAGAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DAGAppDelegate.h; sourceTree = "<group>"; };
 		07DC8A221955B4590083AF8A /* DAGAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DAGAppDelegate.m; sourceTree = "<group>"; };
 		07DC8A241955B4590083AF8A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		07DC8A2A1955B4590083AF8A /* DeliveryAgentsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeliveryAgentsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		07DC8A2A1955B4590083AF8A /* CareAgentsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CareAgentsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		07DC8A2B1955B4590083AF8A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		07DC8A331955B4590083AF8A /* DeliveryAgentsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DeliveryAgentsTests-Info.plist"; sourceTree = "<group>"; };
+		07DC8A331955B4590083AF8A /* CareAgentsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CareAgentsTests-Info.plist"; sourceTree = "<group>"; };
 		07DC8A351955B4590083AF8A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		07DC8A371955B4590083AF8A /* DeliveryAgentsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeliveryAgentsTests.m; sourceTree = "<group>"; };
 		07DC8A411955B88D0083AF8A /* DAGSessionService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DAGSessionService.h; path = Networking/DAGSessionService.h; sourceTree = "<group>"; };
@@ -160,8 +160,8 @@
 		07DC8A0A1955B4590083AF8A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				07DC8A091955B4590083AF8A /* DeliveryAgents.app */,
-				07DC8A2A1955B4590083AF8A /* DeliveryAgentsTests.xctest */,
+				07DC8A091955B4590083AF8A /* CareAgents.app */,
+				07DC8A2A1955B4590083AF8A /* CareAgentsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -196,8 +196,8 @@
 		07DC8A151955B4590083AF8A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				07DC8A161955B4590083AF8A /* DeliveryAgents-Prefix.pch */,
-				07DC8A1B1955B4590083AF8A /* DeliveryAgents-Info.plist */,
+				07DC8A161955B4590083AF8A /* CareAgents-Prefix.pch */,
+				07DC8A1B1955B4590083AF8A /* CareAgents-Info.plist */,
 				07DC8A1C1955B4590083AF8A /* InfoPlist.strings */,
 				07DC8A1F1955B4590083AF8A /* main.m */,
 				0776D5CE195634CE00D43E32 /* ip_address.h */,
@@ -233,7 +233,7 @@
 		07DC8A321955B4590083AF8A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				07DC8A331955B4590083AF8A /* DeliveryAgentsTests-Info.plist */,
+				07DC8A331955B4590083AF8A /* CareAgentsTests-Info.plist */,
 				07DC8A341955B4590083AF8A /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -242,9 +242,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		07DC8A081955B4580083AF8A /* DeliveryAgents */ = {
+		07DC8A081955B4580083AF8A /* CareAgents */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 07DC8A3B1955B4590083AF8A /* Build configuration list for PBXNativeTarget "DeliveryAgents" */;
+			buildConfigurationList = 07DC8A3B1955B4590083AF8A /* Build configuration list for PBXNativeTarget "CareAgents" */;
 			buildPhases = (
 				4EC5249FAA0746D08F3A341E /* Check Pods Manifest.lock */,
 				07DC8A051955B4580083AF8A /* Sources */,
@@ -257,14 +257,14 @@
 			);
 			dependencies = (
 			);
-			name = DeliveryAgents;
+			name = CareAgents;
 			productName = DeliveryAgents;
-			productReference = 07DC8A091955B4590083AF8A /* DeliveryAgents.app */;
+			productReference = 07DC8A091955B4590083AF8A /* CareAgents.app */;
 			productType = "com.apple.product-type.application";
 		};
-		07DC8A291955B4590083AF8A /* DeliveryAgentsTests */ = {
+		07DC8A291955B4590083AF8A /* CareAgentsTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 07DC8A3E1955B4590083AF8A /* Build configuration list for PBXNativeTarget "DeliveryAgentsTests" */;
+			buildConfigurationList = 07DC8A3E1955B4590083AF8A /* Build configuration list for PBXNativeTarget "CareAgentsTests" */;
 			buildPhases = (
 				07DC8A261955B4590083AF8A /* Sources */,
 				07DC8A271955B4590083AF8A /* Frameworks */,
@@ -275,9 +275,9 @@
 			dependencies = (
 				07DC8A301955B4590083AF8A /* PBXTargetDependency */,
 			);
-			name = DeliveryAgentsTests;
+			name = CareAgentsTests;
 			productName = DeliveryAgentsTests;
-			productReference = 07DC8A2A1955B4590083AF8A /* DeliveryAgentsTests.xctest */;
+			productReference = 07DC8A2A1955B4590083AF8A /* CareAgentsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -295,7 +295,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 07DC8A041955B4580083AF8A /* Build configuration list for PBXProject "DeliveryAgents" */;
+			buildConfigurationList = 07DC8A041955B4580083AF8A /* Build configuration list for PBXProject "CareAgents" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -307,8 +307,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				07DC8A081955B4580083AF8A /* DeliveryAgents */,
-				07DC8A291955B4590083AF8A /* DeliveryAgentsTests */,
+				07DC8A081955B4580083AF8A /* CareAgents */,
+				07DC8A291955B4590083AF8A /* CareAgentsTests */,
 			);
 		};
 /* End PBXProject section */
@@ -414,7 +414,7 @@
 /* Begin PBXTargetDependency section */
 		07DC8A301955B4590083AF8A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 07DC8A081955B4580083AF8A /* DeliveryAgents */;
+			target = 07DC8A081955B4580083AF8A /* CareAgents */;
 			targetProxy = 07DC8A2F1955B4590083AF8A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -516,9 +516,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "DeliveryAgents/DeliveryAgents-Prefix.pch";
-				INFOPLIST_FILE = "DeliveryAgents/DeliveryAgents-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "DeliveryAgents/CareAgents-Prefix.pch";
+				INFOPLIST_FILE = "DeliveryAgents/CareAgents-Info.plist";
+				PRODUCT_NAME = CareAgents;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -530,9 +530,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "DeliveryAgents/DeliveryAgents-Prefix.pch";
-				INFOPLIST_FILE = "DeliveryAgents/DeliveryAgents-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "DeliveryAgents/CareAgents-Prefix.pch";
+				INFOPLIST_FILE = "DeliveryAgents/CareAgents-Info.plist";
+				PRODUCT_NAME = CareAgents;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -552,8 +552,8 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "DeliveryAgentsTests/DeliveryAgentsTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "DeliveryAgentsTests/CareAgentsTests-Info.plist";
+				PRODUCT_NAME = CareAgentsTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -570,8 +570,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DeliveryAgents/DeliveryAgents-Prefix.pch";
-				INFOPLIST_FILE = "DeliveryAgentsTests/DeliveryAgentsTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "DeliveryAgentsTests/CareAgentsTests-Info.plist";
+				PRODUCT_NAME = CareAgentsTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -580,7 +580,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		07DC8A041955B4580083AF8A /* Build configuration list for PBXProject "DeliveryAgents" */ = {
+		07DC8A041955B4580083AF8A /* Build configuration list for PBXProject "CareAgents" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				07DC8A391955B4590083AF8A /* Debug */,
@@ -589,7 +589,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		07DC8A3B1955B4590083AF8A /* Build configuration list for PBXNativeTarget "DeliveryAgents" */ = {
+		07DC8A3B1955B4590083AF8A /* Build configuration list for PBXNativeTarget "CareAgents" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				07DC8A3C1955B4590083AF8A /* Debug */,
@@ -598,7 +598,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		07DC8A3E1955B4590083AF8A /* Build configuration list for PBXNativeTarget "DeliveryAgentsTests" */ = {
+		07DC8A3E1955B4590083AF8A /* Build configuration list for PBXNativeTarget "CareAgentsTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				07DC8A3F1955B4590083AF8A /* Debug */,
